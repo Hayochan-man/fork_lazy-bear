@@ -4,8 +4,10 @@ npm-debug.log*
 
 # Next.js
 app/.next/
+.next/
 app/out/
 app/build/
+*.tsbuildinfo
 
 # Environment files（重要！）
 .env

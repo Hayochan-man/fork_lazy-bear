@@ -1,5 +1,22 @@
 {
-  "/(client)/personas/page": "app/(client)/personas/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/personas/[personaId]/projects/route": "app/api/personas/[personaId]/projects/route.js",
+  "/api/personas/route": "app/api/personas/route.js",
+  "/api/projects/[projectId]/route": "app/api/projects/[projectId]/route.js",
+  "/api/projects/[projectId]/steps/generate/route": "app/api/projects/[projectId]/steps/generate/route.js",
+  "/api/projects/[projectId]/steps/route": "app/api/projects/[projectId]/steps/route.js",
+  "/api/projects/[projectId]/tasks/generate/route": "app/api/projects/[projectId]/tasks/generate/route.js",
+  "/api/projects/[projectId]/weights/generate/route": "app/api/projects/[projectId]/weights/generate/route.js",
+  "/api/projects/[projectId]/weights/route": "app/api/projects/[projectId]/weights/route.js",
+  "/api/steps/[stepId]/tasks/route": "app/api/steps/[stepId]/tasks/route.js",
+  "/api/test-db/route": "app/api/test-db/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(client)/personas/[id]/projects/page": "app/(client)/personas/[id]/projects/page.js",
+  "/(client)/personas/[id]/projects/post/page": "app/(client)/personas/[id]/projects/post/page.js",
+  "/(client)/projects/[id]/created-success/page": "app/(client)/projects/[id]/created-success/page.js",
+  "/(client)/projects/[id]/page": "app/(client)/projects/[id]/page.js",
+  "/(client)/personas/page": "app/(client)/personas/page.js",
+  "/(client)/projects/[id]/steps/post/page": "app/(client)/projects/[id]/steps/post/page.js",
+  "/(client)/projects/[id]/weights/post/page": "app/(client)/projects/[id]/weights/post/page.js",
   "/page": "app/page.js"
 }

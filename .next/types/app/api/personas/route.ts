@@ -1,4 +1,4 @@
-// File: C:\dev\fork_lazy-bear\app\src\app\api\personas\route.ts
+// File: /home/runner/work/fork_lazy-bear/fork_lazy-bear/src/app/api/personas/route.ts
 import * as entry from '../../../../../src/app/api/personas/route.js'
 import type { NextRequest } from 'next/server.js'
 

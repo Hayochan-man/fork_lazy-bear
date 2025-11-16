@@ -1,4 +1,4 @@
-// File: C:\dev\fork_lazy-bear\app\src\app\(client)\personas\page.tsx
+// File: /home/runner/work/fork_lazy-bear/fork_lazy-bear/src/app/(client)/personas/page.tsx
 import * as entry from '../../../../../src/app/(client)/personas/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

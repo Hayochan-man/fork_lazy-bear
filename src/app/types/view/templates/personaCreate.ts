@@ -4,6 +4,7 @@ import type { PersonaCreateErrors } from "@/types/viewModel/personaCreate";
 export type PersonaCreateTemplateProps = {
   form: PersonaCreateViewModel;
   errors: PersonaCreateErrors;
+  isSubmitting: boolean;
   onChange: (partial: Partial<PersonaCreateViewModel>) => void;
   onSubmit: () => void;
 };

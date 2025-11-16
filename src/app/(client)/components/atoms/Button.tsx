@@ -6,12 +6,14 @@ export default function Button({
   label,
   onClick,
   type,
+  disabled = false,
 }: ButtonProps) {
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`font-semibold transition ${className}`}
+      disabled={disabled}
+      className={`font-semibold transition ${className} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
       style={{
         width: "226px",
         height: "60px",

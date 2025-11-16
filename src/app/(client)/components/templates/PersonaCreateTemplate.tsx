@@ -4,6 +4,7 @@ import PersonaForm from "../organisms/PersonaForm";
 export default function PersonaCreateTemplate({
   form,
   errors,
+  isSubmitting,
   onChange,
   onSubmit,
 }: PersonaCreateTemplateProps) {
@@ -14,6 +15,7 @@ export default function PersonaCreateTemplate({
           <PersonaForm
             form={form}
             errors={errors}
+            isSubmitting={isSubmitting}
             onChange={onChange}
             onSubmit={onSubmit}
           />

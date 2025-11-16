@@ -6,6 +6,7 @@ import Button from "../atoms/Button";
 export default function PersonaForm({
   form,
   errors,
+  isSubmitting,
   onChange,
   onSubmit,
 }: PersonaFormProps) {
@@ -40,8 +41,9 @@ export default function PersonaForm({
 
       <Button
         className="absolute left-1/2 -translate-x-1/2 top-[75%]"
-        label="決定"
+        label={isSubmitting ? "送信中..." : "決定"}
         type="submit"
+        disabled={isSubmitting}
       />
     </form>
   );

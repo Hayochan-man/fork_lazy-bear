@@ -9,6 +9,7 @@ import type { ApiError } from "@/types/api/error";
 export default function PersonaCreatePage() {
   const router = useRouter();
   const [errors, setErrors] = useState<PersonaCreateErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState<PersonaCreateViewModel>(
     apiToViewModel({
       weekdayHours: 1,
@@ -54,6 +55,8 @@ export default function PersonaCreatePage() {
   };
 
   const handleSubmit = async () => {
+    if (isSubmitting) return;
+    
     try {
       setErrors({});
       if (!form.learningPattern) {
@@ -68,11 +71,14 @@ export default function PersonaCreatePage() {
         setErrors({ hours: "無効な入力値です" });
         return;
       }
+      
+      setIsSubmitting(true);
       const data = await postPersona(viewModelToApi(form));
       router.push(`/personas/${data.personas.personaId}/projects`);
     } catch (e: unknown) {
       const err = handleApiError(e);
       console.error(`エラー (${err.code}): ${err.message}`);
+      setIsSubmitting(false);
     }
   };
 
@@ -80,6 +86,7 @@ export default function PersonaCreatePage() {
     <PersonaCreateTemplate
       form={form}
       errors={errors}
+      isSubmitting={isSubmitting}
       onChange={handleChange}
       onSubmit={handleSubmit}
     />
